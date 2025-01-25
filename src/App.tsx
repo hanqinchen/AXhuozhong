@@ -21,10 +21,11 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
+      <h1 className="text-4xl text-red-500">测试文本</h1>
+      <Hero />
       <Analytics />
       <SpeedInsights />
       <Header />
-      <Hero />
       {/* Header */}
       <header className="fixed w-full bg-white/90 backdrop-blur-md z-50">
         <nav className="container mx-auto px-6 py-4">
