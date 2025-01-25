@@ -12,13 +12,20 @@ function App() {
     }
   };
 
+  const handleLogoClick = () => {
+    window.location.reload();
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="fixed w-full bg-white/90 backdrop-blur-md z-50">
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center">
+            <div 
+              className="flex items-center cursor-pointer" 
+              onClick={handleLogoClick}
+            >
               <img 
                 src="/axing-avatar.jpg" 
                 alt="阿星" 
@@ -301,14 +308,12 @@ function App() {
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4">加入我们</h4>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-4">
-                  <QrCode className="h-6 w-6 text-orange-500" />
-                  <span className="text-gray-400">扫码开启觉醒之旅</span>
+              <div className="flex flex-col items-center space-y-4">
+                <QrCode className="h-32 w-32 text-orange-500" />
+                <div className="text-gray-400 text-center">
+                  <p className="mb-2">扫码开启觉醒之旅</p>
+                  <p>让我们一起传播智慧，点亮心灵，共同成长</p>
                 </div>
-                <p className="text-gray-400">
-                  让我们一起传播智慧，点亮心灵，共同成长
-                </p>
               </div>
             </div>
           </div>
