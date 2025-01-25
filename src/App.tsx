@@ -225,10 +225,6 @@ function App() {
                   <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
                   <span>Open Day问答互动</span>
                 </li>
-                <li className="flex items-start">
-                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
-                  <span>现场拍摄指导</span>
-                </li>
               </ul>
             </div>
           </div>
@@ -245,7 +241,7 @@ function App() {
               通过传播智慧来修心长智慧，共同为这个世界种下觉醒的种子。
             </p>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <h3 className="text-2xl font-bold mb-6">火种计划 - ¥1250</h3>
+              <h3 className="text-2xl font-bold mb-6">火种计划</h3>
               <p className="text-gray-600 mb-8">
                 加入我们，不仅获得完整的运营培训和IP资源，更重要的是一起传播智慧，给众生种下福田。
                 正如悉达多所言，传播智慧的功德，远超恒河沙数的布施。
