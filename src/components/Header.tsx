@@ -6,7 +6,7 @@ export default function Header() {
           {/* 左侧 Logo 区域 */}
           <div className="flex items-center cursor-pointer" onClick={() => window.location.reload()}>
             <img 
-              src="/avatar.jpg" 
+              src="/axing-avatar.jpg" 
               alt="Logo" 
               className="h-8 w-8 rounded-full"
             />
