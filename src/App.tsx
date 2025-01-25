@@ -18,71 +18,12 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="fixed w-full bg-white/90 backdrop-blur-md z-50">
-        <nav className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <img 
-                src="/axing-avatar.jpg" 
-                alt="阿星" 
-                className="h-8 w-8 rounded-full"
-              />
-              <span className="ml-2 text-xl font-bold">阿星火种计划</span>
-            </div>
-            
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#about" className="text-gray-600 hover:text-orange-500">关于阿星</a>
-              <a href="#mission" className="text-gray-600 hover:text-orange-500">项目使命</a>
-              <a href="#features" className="text-gray-600 hover:text-orange-500">计划权益</a>
-              <a href="#join" className="text-gray-600 hover:text-orange-500">加入我们</a>
-              <a href="#contact" className="text-gray-600 hover:text-orange-500">联系方式</a>
-            </div>
-
-            <button 
-              className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X /> : <Menu />}
-            </button>
-          </div>
-
-          {isMenuOpen && (
-            <div className="md:hidden mt-4 pb-4">
-              <div className="flex flex-col space-y-4">
-                <a href="#about" className="text-gray-600">关于阿星</a>
-                <a href="#mission" className="text-gray-600">项目使命</a>
-                <a href="#features" className="text-gray-600">计划权益</a>
-                <a href="#join" className="text-gray-600">加入我们</a>
-                <a href="#contact" className="text-gray-600">联系方式</a>
-              </div>
-            </div>
-          )}
-        </nav>
-      </header>
-
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-orange-50 to-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
-              传播真理，不问归期
-            </h1>
-            <p className="text-xl text-gray-600 mb-12">
-              火种计划致力于传播真理，找到人类精神的火种，点燃有影响力的IP，
-              去影响和引领更多人的精神成长，提升生命境界。
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="#contact" onClick={scrollToContact} className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600">
-                立即加入 <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-              <a href="#about" className="inline-flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
-                了解更多
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Header />
+      <main className="pt-16">
+        <Hero />
+      </main>
+      <Analytics />
+      <SpeedInsights />
 
       {/* About Section */}
       <section id="about" className="py-20 bg-gray-50">
