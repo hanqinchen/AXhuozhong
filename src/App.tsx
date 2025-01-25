@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-
+// import Analytics from './components/Analytics';
 function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -16,27 +16,13 @@ function App() {
     }
   };
 
-  const handleLogoClick = () => {
-    window.location.reload();
-  };
-
   return (
     <div className="min-h-screen bg-white">
-      <Header />
-      <main className="pt-16">
-        <Hero />
-      </main>
-      <Analytics />
-      <SpeedInsights />
-      <Header />
       {/* Header */}
       <header className="fixed w-full bg-white/90 backdrop-blur-md z-50">
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div 
-              className="flex items-center cursor-pointer" 
-              onClick={handleLogoClick}
-            >
+            <div className="flex items-center">
               <img 
                 src="/axing-avatar.jpg" 
                 alt="阿星" 
@@ -236,6 +222,10 @@ function App() {
                   <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
                   <span>Open Day问答互动</span>
                 </li>
+                <li className="flex items-start">
+                  <ChevronRight className="h-5 w-5 text-orange-500 mr-2 mt-1 flex-shrink-0" />
+                  <span>现场拍摄指导</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -252,7 +242,7 @@ function App() {
               通过传播智慧来修心长智慧，共同为这个世界种下觉醒的种子。
             </p>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <h3 className="text-2xl font-bold mb-6">火种计划</h3>
+              <h3 className="text-2xl font-bold mb-6">火种计划 - ¥1250</h3>
               <p className="text-gray-600 mb-8">
                 加入我们，不仅获得完整的运营培训和IP资源，更重要的是一起传播智慧，给众生种下福田。
                 正如悉达多所言，传播智慧的功德，远超恒河沙数的布施。
@@ -314,17 +304,13 @@ function App() {
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-6">加入我们</h4>
-              <div className="flex flex-col items-center space-y-4">
-                <img 
-                  src="/qrcode.jpg" 
-                  alt="阿星火种计划公众号" 
-                  className="w-32 h-32 mb-2"
-                />
-                <p className="text-gray-400 text-center">
-                  扫码开启觉醒之旅
-                </p>
-                <p className="text-gray-400 text-center">
+              <h4 className="text-lg font-semibold mb-4">加入我们</h4>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-4">
+                  <QrCode className="h-6 w-6 text-orange-500" />
+                  <span className="text-gray-400">扫码开启觉醒之旅</span>
+                </div>
+                <p className="text-gray-400">
                   让我们一起传播智慧，点亮心灵，共同成长
                 </p>
               </div>
