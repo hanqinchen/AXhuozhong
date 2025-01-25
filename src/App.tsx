@@ -307,13 +307,19 @@ function App() {
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">加入我们</h4>
+              <h4 className="text-lg font-semibold mb-6">加入我们</h4>
               <div className="flex flex-col items-center space-y-4">
-                <QrCode className="h-32 w-32 text-orange-500" />
-                <div className="text-gray-400 text-center">
-                  <p className="mb-2">扫码开启觉醒之旅</p>
-                  <p>让我们一起传播智慧，点亮心灵，共同成长</p>
-                </div>
+                <img 
+                  src="/qrcode.jpg" 
+                  alt="阿星火种计划公众号" 
+                  className="w-32 h-32 mb-2"
+                />
+                <p className="text-gray-400 text-center">
+                  扫码开启觉醒之旅
+                </p>
+                <p className="text-gray-400 text-center">
+                  让我们一起传播智慧，点亮心灵，共同成长
+                </p>
               </div>
             </div>
           </div>
