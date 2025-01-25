@@ -1,4 +1,4 @@
-const Hero = () => {
+export default function Hero() {
   return (
     <div className="text-center py-20 px-4 bg-gradient-to-b from-orange-50 to-white">
       {/* 主标题 */}
@@ -35,6 +35,4 @@ const Hero = () => {
       </div>
     </div>
   );
-};
-
-export default Hero; 
+} 
