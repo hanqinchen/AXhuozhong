@@ -21,8 +21,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      <SpeedInsights />
       <Analytics />
+      <SpeedInsights />
       <Header />
       <Hero />
       {/* Header */}
