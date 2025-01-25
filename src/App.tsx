@@ -2,6 +2,7 @@ import React from 'react';
 import { Menu, X, ChevronRight, QrCode, ArrowRight, Sparkles, Users, BookOpen, Target, Award, Heart, Flame, Brain } from 'lucide-react';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import Header from './components/Header';
 import Hero from './components/Hero';
 
 function App() {
@@ -21,8 +22,10 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      <h1 className="text-4xl text-red-500">测试文本</h1>
-      <Hero />
+      <Header />
+      <main className="pt-16">
+        <Hero />
+      </main>
       <Analytics />
       <SpeedInsights />
       <Header />
