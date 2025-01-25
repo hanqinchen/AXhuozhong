@@ -182,8 +182,17 @@ function App() {
               从2025年1月开始，我们将建立一支有信仰的操盘手团队，
               通过传播智慧来修心长智慧，共同为这个世界种下觉醒的种子。
             </p>
+            <p className="text-xl text-gray-600 mb-12">
+              用爱点亮这颗星球，传播正心正念正能量
+            </p>
+            <p className="text-xl text-gray-600 mb-12">
+              为自觉故，具赋勇气在真理面前撕下所有伪装面具
+            </p>
+            <p className="text-xl text-gray-600 mb-12">
+              为利他故，毫无畏惧在裟婆面前戴上任何所需面具
+            </p>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <h3 className="text-2xl font-bold mb-6">火种计划 - ¥1250</h3>
+              <h3 className="text-2xl font-bold mb-6">火种计划</h3>
               <p className="text-gray-600 mb-8">
                 加入我们，不仅获得完整的运营培训和IP资源，更重要的是一起传播智慧，给众生种下福田。
                 正如悉达多所言，传播智慧的功德，远超恒河沙数的布施。
