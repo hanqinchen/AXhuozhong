@@ -2,6 +2,7 @@ import React from 'react';
 import { Menu, X, ChevronRight, QrCode, ArrowRight, Sparkles, Users, BookOpen, Target, Award, Heart, Flame, Brain } from 'lucide-react';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import Hero from './components/Hero';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -22,6 +23,8 @@ function App() {
     <div className="min-h-screen bg-white">
       <SpeedInsights />
       <Analytics />
+      <Header />
+      <Hero />
       {/* Header */}
       <header className="fixed w-full bg-white/90 backdrop-blur-md z-50">
         <nav className="container mx-auto px-6 py-4">
